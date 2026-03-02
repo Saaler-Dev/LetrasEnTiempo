@@ -12,7 +12,7 @@ BLANCO = "\033[37m"
 #Solamente tengo los colores mencionados arriba, si deseas aplicar algún color en las letras, sigue la siguiente estructura
 # letra("parte de la canción", COLOR, tiempo entre mensaje, velocidad en la que saldrá la linea completa)
 #en caso quieras que en esa linea tenga palabras de diferente color, puedes agregar fin = "" dentro de la estructura "letra(..., fin= "")"
-#y para cerrar el ciclo, simplemente en la siguiente estructura no le agregue el fin="" -> Observa el def prueba
+#y para cerrar el ciclo, simplemente en la siguiente estructura no le agregue el fin="" -> Observa el def prueba.
 
 def letra(texto, color, tiempo, vel=0.06, fin="\n"):
     sys.stdout.write(color)
