@@ -9,6 +9,11 @@ AZUL = "\033[38;2;0;191;255m"
 VERDE = "\033[38;2;152;251;152m"
 BLANCO = "\033[37m"
 
+#Solamente tengo los colores mencionados arriba, si deseas aplicar algún color en las letras, sigue la siguiente estructura
+# letra("parte de la canción", COLOR, tiempo entre mensaje, velocidad en la que saldrá la linea completa)
+#en caso quieras que en esa linea tenga palabras de diferente color, puedes agregar fin = "" dentro de la estructura "letra(..., fin= "")"
+#y para cerrar el ciclo, simplemente en la siguiente estructura no le agregue el fin="" -> Observa el def prueba
+
 def letra(texto, color, tiempo, vel=0.06, fin="\n"):
     sys.stdout.write(color)
     for letra in texto:
@@ -22,11 +27,11 @@ def letra(texto, color, tiempo, vel=0.06, fin="\n"):
 def prueba():
 
     letra("But if you're too drunk to drive", BLANCO, 0.6, 0.05, fin="")
-    letra(" and the music is right", BLANCO,  1.3, 0.07)
+    letra(" and the music is right", VERDE,  1.3, 0.07)
     letra("She might let you stay", BLANCO,  0.8, 0.06, fin="")
-    letra(" but just for the night", BLANCO,  0.5, 0.06)
-    letra("And if she grabs for your hand", BLANCO, 1.02, 0.05,fin="")
-    letra(" and drags you along", BLANCO,  1, 0.07)
+    letra(" but just for the night", AZUL,  0.5, 0.06)
+    letra("And if she grabs for your hand", BLANCO, 0, 0.05,fin="")
+    letra(" and drags you along", MAGENTA,  1, 0.07)
 
 def Letras():
 
@@ -147,4 +152,4 @@ def Letras1():
     letra("Ever since she cut her blue hair off", AMARILLO, 2.0, 0.07)
 
 if __name__ == "__main__":
-    Letras()
+    prueba()
