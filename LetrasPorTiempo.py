@@ -76,7 +76,7 @@ def Letras1():
 
     print(f"{MAGENTA}TV Girl - Blue Hair\n")
     time.sleep(0.3)
-    letra("pam pam pam...", CIAN, 1.8, 0.13)
+    letra("pam pam pam...", CIAN, 5, 0.01)
     letra("pam pam pam...", CIAN, 2.0, 0.13)
     letra("pam pam pam...", MAGENTA, 1.6, 0.13)
     letra("pam pam pam...", MAGENTA, 2.8, 0.13)
@@ -152,4 +152,4 @@ def Letras1():
     letra("Ever since she cut her blue hair off", AMARILLO, 2.0, 0.07)
 
 if __name__ == "__main__":
-    prueba()
+    Letras()
